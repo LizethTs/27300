@@ -137,7 +137,15 @@ body {
   padding: 20px;
   margin-bottom: 40px;
   width: 300px;
-  border: 2px solid black;
+  border: 2px solid #cfcfcf;
+}
+
+.articulo:hover{
+  transform: scale(1.1);
+  background-color: #FFFFFF;
+  border-color: #ffeae5;
+  transition: all 1s;
+  transition: border-color 1s;
 }
 
 .articulo img {
@@ -491,10 +499,6 @@ body {
 
   .articulo-seccion {
     grid-template-columns: 100%;
-  }
-
-  .articulo {
-    width: 100%;
   }
 
   .descripcion p {
