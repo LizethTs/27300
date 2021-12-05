@@ -276,6 +276,14 @@ body {
   border: 2px solid black;
 }
 
+.integrante:hover{
+  transform: scale(1.1);
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  transition: all 1s;
+  transition: border-color 1s;
+}
+
 .integrante img {
   width: 100%;
 }
@@ -524,10 +532,6 @@ body {
   .integrante-explorar {
     grid-template-columns: inherit;
     justify-content: center;
-  }
-
-  .integrante {
-    width: 100%;
   }
 
   .titulo-noticias {
