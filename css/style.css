@@ -177,6 +177,11 @@ body {
   margin: 18px;
 }
 
+.social-item a img:hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
 .copyright {
   font-size: 12px;
 }
