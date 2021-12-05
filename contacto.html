@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>They</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--logo-->
+	<div class="logo">
+		<p class="nombre-logo">THEY</p>
+		<p class="frase-logo">Love & Life</p>
+	</div>
+	<!--menu de navegación-->
+	<div class="nav-container">
+		<ul class="nav-list">
+			<li class="nav-item">
+				<a href="index.html">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="nosotros.html">Nosotros</a>
+			</li>
+			<li class="nav-item">
+				<a href="explorar.html">Explorar</a>
+			</li>
+			<li class="nav-item">
+				<a href="noticias.html">Noticias</a>
+			</li>
+			<li class="nav-item">
+				<a href="contacto.html">Contacto</a>
+			</li>
+		</ul>
+	</div>
+	<!--seccion 1-->
+	<div class="seccion-contacto">
+		<div class="titulo-contacto">
+			<p>Contacto</p>
+		</div>
+		<div class="contenido-contacto">
+			<div class="imagen-contacto">
+				<img src="img/dog4.jpg" alt="imagen">
+			</div>
+			<div class="formulario-contacto">
+				<form action="" method="post" enctype="multipart/form-data">
+					<div>
+						<label class="input-label">Nombre:</label>
+						<input class="input-estilo" type="text" name="nombre" placeholder="Nombre">
+					</div>
+					<div>
+						<label class="input-label">Email:</label>
+						<input  class="input-estilo" type="email" name="email" placeholder="email">
+					</div>
+					<div>
+						<select name="asunto" id="asunto">
+							<option value="" disabled selected hidden>Seleccione una opcion</option>
+							<option value="adopcion">adopción</option>
+							<option value="donacion">donación</option>
+							<option value="hogar-transitorio">hogar transitorio</option>
+						</select>
+					</div>
+					<div>
+						<label for="novedades">Deseo recibir novedades</label>
+						<input type="checkbox" name="novedades" value="1" id="novedades" checked>
+					</div>
+					<div>
+						<textarea  class="formulario-textarea" name="textarea" placeholder="Escribe tu consulta aqui..."></textarea>
+					</div>
+					<div>
+						<input type="button" value="limpiar formulario">
+						<input type="submit" value="enviar formulario">
+					</div>
+				</form>
+			</div>	
+		</div>
+		
+	</div>
+	<!--seccion 2-->
+	<div class="ubicacion">
+		<div class="titulo-ubicacion">
+			<p>Encontranos en:</p>
+		</div>
+		<div class="ubicacion-datos">
+			<ul class="ubicacion-list">
+				<li class="ubicacion-item">Dirección: Varela 242, Capital Federal, Argentina.</li>
+				<li class="ubicacion-item">Telefono: +54 9 15-4321-3468</li>
+				<li class="ubicacion-item">www.they.org.ar</li>
+			</ul>
+		</div>
+		<div class="mapa-ubicacion">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8802009597403!2d-58.46639214878178!3d-34.63246758035598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc98794ed7623%3A0x47641d2a19820dd7!2sAv.%20Varela%20242%2C%20C1406EKF%20CABA!5e0!3m2!1ses-419!2sar!4v1636392754265!5m2!1ses-419!2sar" class="mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<div class="titulo-footer">
+			<p>THEY</p>
+		</div>
+		<div class="social">
+			<ul class="social-list">
+				<li class="social-item">
+					<a href="https://es-la.facebook.com/">
+					<img src="img/facebook.png" alt="facebook">
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="https://www.instagram.com/?hl=es">
+					<img src="img/instagram.png" alt="instagram">
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="https://twitter.com/?lang=es">
+					<img src="img/twitter.png" alt="twitter">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>Love & Life</p>
+			<p>Copyright © 2021 THEY, Organitization | All Rights Reserved</p>
+		</div>
+	</div>
+</body>
+</html>
