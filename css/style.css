@@ -45,7 +45,6 @@ body {
   list-style: none;
   text-transform: uppercase;
   padding: 20px;
-  transition: 0.5s;
 }
 
 .nav-item a {
@@ -55,6 +54,7 @@ body {
 }
 .nav-item:hover {
   background-color: #ffdab9;
+  transition: 0.5s;
 }
 
 /*estilo de la sección banner*/
