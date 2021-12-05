@@ -303,12 +303,24 @@ body {
   border-radius: 3px;
 }
 
+.button1-descripcion:hover{
+  transform: scale(1.2);
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+
 .button2-descripcion {
   padding: 5px 10px;
   background: #ffb3ff;
   color: #4d4d33;
   border: none;
   border-radius: 3px;
+}
+
+.button2-descripcion:hover{
+  transform: scale(1.2);
+  margin-left: 10px;
+  transition: all 0.5s;
 }
 
 /*estilo del archivo noticias*/
