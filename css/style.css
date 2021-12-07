@@ -429,6 +429,23 @@ body {
 
 /*estilo de la seccion 2 del archivo contacto*/
 
+.input-estilo:focus {
+  background-color: #ffeae5;
+}
+
+.boton-formulario {
+  padding: 5px 10px;
+  background: #ffb3ff;
+  color: #4d4d33;
+  border: none;
+  border-radius: 3px;
+}
+
+.boton-formulario:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
 .ubicacion {
   padding: 20px;
   background-color: #f2e6ff;
@@ -570,7 +587,7 @@ body {
     width: 75%;
     margin-top: 25px;
   }
-
+  
   .titulo-ubicacion {
     font-size: 35px;
   }
