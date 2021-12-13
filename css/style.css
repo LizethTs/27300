@@ -76,14 +76,8 @@ ul{
 }
 
 .button-list {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 300px 200px;
-  grid-gap: 10px;
   list-style-type: none;
-  text-align: center;
   padding: 20px;
-  margin: auto 0;
 }
 
 .button-item {
@@ -465,12 +459,6 @@ ul{
 
   .titulo-banner {
     font-size: 20px;
-  }
-
-  .button-list {
-    grid-template-columns: inherit;
-    justify-content: center;
-    margin: 0px auto;
   }
 
   .button-item {
