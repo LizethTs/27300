@@ -382,23 +382,6 @@ ul{
   color: #4d4d33;
 }
 
-.contenido-contacto {
-  display: grid;
-  justify-content: flex-start;
-  grid-template-columns: auto auto;
-  grid-column-gap: 50px;
-}
-
-.imagen-contacto {
-  width: 50%;
-  vertical-align: top;
-  margin-right: 50px;
-}
-
-.imagen-contacto img {
-  width: 200%;
-}
-
 .formulario-contacto {
   padding: 20px;
   background-color: #ffffff;
@@ -447,7 +430,6 @@ ul{
 
 .titulo-ubicacion {
   font-size: 50px;
-  text-align: center;
   color: #4d4d33;
 }
 
@@ -567,14 +549,6 @@ ul{
 
   .titulo-contacto {
     font-size: 35px;
-  }
-
-  .contenido-contacto {
-    grid-template-columns: inherit;
-  }
-
-  .imagen-contacto img {
-    width: 150%;
   }
 
   .formulario-contacto {
