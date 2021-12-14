@@ -44,13 +44,13 @@
         <div class="titulo-contacto">
           <p>Contacto</p>
         </div>
-        <div class="flex-column flex-sm-column flex-md-column flex-lg-row d-flex justify-content-around contenido-contacto">
+        <div class="flex-column flex-sm-column flex-md-column flex-lg-row d-flex justify-content-center contenido-contacto">
           <div class="imagen-contacto me-4">
             <img src="img/dog4.jpg" class="img-thumbnail" alt="imagen" />
           </div>
-          <div class="formulario-contacto">
+          <div class="form-floating ms-5">
             <form action="" method="post" enctype="multipart/form-data">
-              <div>
+              <div class="mb-2">
                 <label class="input-label">Nombre:</label>
                 <input
                   class="input-estilo"
@@ -59,7 +59,7 @@
                   placeholder="Nombre"
                 />
               </div>
-              <div>
+              <div class="mb-2">
                 <label class="input-label">Email:</label>
                 <input
                   class="input-estilo"
@@ -68,7 +68,7 @@
                   placeholder="email"
                 />
               </div>
-              <div>
+              <div class="mb-2">
                 <select name="asunto" id="asunto">
                   <option value="" disabled selected hidden>
                     Seleccione una opcion
@@ -78,7 +78,7 @@
                   <option value="hogar-transitorio">hogar transitorio</option>
                 </select>
               </div>
-              <div>
+              <div class="mb-2">
                 <label for="novedades">Deseo recibir novedades</label>
                 <input
                   type="checkbox"
@@ -88,14 +88,14 @@
                   checked
                 />
               </div>
-              <div>
+              <div class="mb-2">
                 <textarea
                   class="formulario-textarea"
                   name="textarea"
                   placeholder="Escribe tu consulta aqui..."
                 ></textarea>
               </div>
-              <div>
+              <div class="mb-2">
                 <input
                   class="boton-formulario"
                   type="button"

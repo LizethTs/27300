@@ -118,13 +118,6 @@ ul{
   color: #afbb71;
 }
 
-.articulo-seccion {
-  display: grid;
-  justify-content: space-around;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-
 .articulo {
   padding: 20px;
   border: 2px solid #cfcfcf;
@@ -476,10 +469,6 @@ ul{
 
   .titulo-seccion {
     font-size: 25px;
-  }
-
-  .articulo-seccion {
-    grid-template-columns: 100%;
   }
 
   .descripcion p {
