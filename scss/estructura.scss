@@ -9,11 +9,20 @@ body {
 ul {
   margin-bottom: 0;
 }
+.font-50{
+  font-size: 50px;
+}
+.font-35{
+  font-size: 35px;
+}
+.padding-20{
+  padding: 20px;
+}
 .container-fluid {
   padding: 0;
 }
 .logo {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_rosa_2;
   font-size: 25px;
 }
@@ -34,7 +43,7 @@ ul {
 .nav-item {
   list-style: none;
   text-transform: uppercase;
-  padding: 20px;
+  @extend .padding-20;
   a {
     color: $they_blanco;
     font-size: 30px;
@@ -75,7 +84,7 @@ ul {
 }
 .button-list {
   list-style-type: none;
-  padding: 20px;
+  @extend .padding-20;
 }
 .button-item {
   text-decoration: none;
@@ -123,7 +132,7 @@ ul {
     }
 }
 .articulo {
-  padding: 20px;
+  @extend .padding-20;
   border: 2px solid $they_gris_3;
   &:hover {
     transform: scale(1.1);
@@ -161,7 +170,7 @@ ul {
   list-style-type: none;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  @extend .padding-20;
   max-width: 300px;
 }
 .social-item {
@@ -179,13 +188,13 @@ ul {
   font-size: 12px;
 }
 .seccion-nosotros {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_gris;
   color: $they_marron_claro;
 }
 .titulo-nosotros {
   text-align: center;
-  font-size: 50px;
+  @extend .font-50;
   @media (max-width: $point-mobile) {
       font-size: 25px;
     }
@@ -206,7 +215,7 @@ ul {
   }
 }
 .descripcion-nosotros {
-  padding: 20px;
+  @extend .padding-20;
   border: 2px solid $they_verde_aceituna;
   p {
     font-size: 18px;
@@ -225,7 +234,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: 35px;
+  @extend .font-35;
   text-align: center;
   p {
     color: $they_blanco;
@@ -235,19 +244,19 @@ ul {
     }
 }
 .seccion-explorar {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_gris;
   color: $they_marron_claro;
 }
 .tituloSeccion-explorar {
-  font-size: 50px;
+  @extend .font-50;
   text-align: center;
   @media (max-width: $point-mobile) {
       font-size: 35px;
     }
 }
 .subtituloSeccion-explorar {
-  font-size: 35px;
+  @extend .font-35;
   text-align: center;
   @media (max-width: $point-mobile) {
         font-size: 18px;
@@ -266,7 +275,7 @@ ul {
     }
 }
 .integrante {
-  padding: 20px;
+  @extend .padding-20;
   margin-bottom: 40px;
   border: 2px solid black;
   &:hover {
@@ -317,12 +326,12 @@ ul {
   }
 }
 .noticias {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_gris;
   color: $they_marron_claro;
 }
 .titulo-noticias {
-  font-size: 50px;
+  @extend .font-50;
   text-align: center;
   @media (max-width: $point-mobile) {
       font-size: 35px;
@@ -332,7 +341,7 @@ ul {
   padding: 10px 20px;
 }
 .subtitulo-noticia {
-  font-size: 35px;
+  @extend .font-35;
   @media (max-width: $point-mobile) {
       font-size: 20px;
     }
@@ -355,12 +364,12 @@ ul {
     }
 }
 .seccion-contacto {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_gris;
 }
 .titulo-contacto {
   padding-bottom: 20px;
-  font-size: 50px;
+  @extend .font-50;
   text-align: center;
   color: $they_marron_claro;
   @media (max-width: $point-mobile) {
@@ -368,7 +377,7 @@ ul {
     }
 }
 .formulario-contacto {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_blanco;
   width: 100%;
   font-size: 25px;
@@ -404,18 +413,18 @@ ul {
   }
 }
 .ubicacion {
-  padding: 20px;
+  @extend .padding-20;
   background-color: $they_gris;
 }
 .titulo-ubicacion {
-  font-size: 50px;
+  @extend .font-50;
   color: $they_marron_claro;
   @media (max-width: $point-mobile) {
       font-size: 35px;
     }
 }
 .ubicacion-datos {
-  padding: 20px;
+  @extend .padding-20;
 }
 .ubicacion-list {
   list-style-type: none;
