@@ -199,21 +199,6 @@ ul {
       font-size: 25px;
     }
 }
-.contenido-nosotros {
-  display: grid;
-  align-content: space-around;
-  grid-template-columns: 50% 50%;
-  grid-gap: 10px;
-  @media (max-width: $point-mobile) {
-      grid-template-columns: 100%;
-    }
-}
-.imagen-nosotros {
-  margin: 25px;
-  img {
-    width: 100%;
-  }
-}
 .descripcion-nosotros {
   @extend .padding-20;
   border: 2px solid $they_verde_aceituna;
