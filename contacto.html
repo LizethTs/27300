@@ -15,13 +15,18 @@
   <body>
     <!--logo-->
     <header>
-      <div class="flex-column flex-sm-column flex-md-row d-flex justify-content-between logo">
-        <p class="nombre-logo">THEY</p>
-        <p class="frase-logo">Love & Life</p>
+      <div
+        class="flex-row flex-sm-row flex-md-row d-flex justify-content-between logo"
+      >
+        <img src="img/they-logo.png" class="logo-img ms-4" alt="logo they" />
+        <p class="frase-logo me-4 mt-4">Love & Life</p>
       </div>
       <!--menu de navegación-->
       <nav class="nav-container">
-        <ul class="nav-list">
+        <div class="nav-icono" onclick="navbarToggle()">
+          <img src="img/menu.png" alt="menu icon">
+        </div>
+        <ul id="menu" class="nav-list">
           <li class="nav-item">
             <a href="index.html">Inicio</a>
           </li>
@@ -46,11 +51,13 @@
         <div class="titulo-contacto">
           <p>Contacto</p>
         </div>
-        <div class="flex-column flex-sm-column flex-md-column flex-lg-row d-flex justify-content-center contenido-contacto">
-          <div class="imagen-contacto me-4">
+        <div
+          class="flex-column flex-sm-column flex-md-column flex-lg-row d-flex justify-content-center"
+        >
+          <div class="imagen-contacto me-md-3">
             <img src="img/dog4.jpg" class="img-thumbnail" alt="imagen" />
           </div>
-          <div class="form-floating ms-5">
+          <div class="form-floating ms-2">
             <form action="" method="post" enctype="multipart/form-data">
               <div class="mb-2">
                 <label class="input-label">Nombre:</label>
@@ -100,7 +107,7 @@
               <div class="mb-2">
                 <input
                   class="boton-formulario"
-                  type="button"
+                  type="reset"
                   value="limpiar formulario"
                 />
                 <input
@@ -137,39 +144,49 @@
           ></iframe>
         </div>
       </section>
-
-      <!--footer-->
-      <footer class="footer">
-        <div class="row">
-          <div class="col-12 titulo-footer">
-            <p>THEY</p>
-          </div>
-          <div class="social">
-            <ul class="row social-list m-auto">
-              <li class="col-4 social-item">
-                <a href="https://es-la.facebook.com/">
-                  <img src="img/facebook.png" alt="facebook" />
-                </a>
-              </li>
-              <li class="col-4 social-item">
-                <a href="https://www.instagram.com/?hl=es">
-                  <img src="img/instagram.png" alt="instagram" />
-                </a>
-              </li>
-              <li class="col-4 social-item">
-                <a href="https://twitter.com/?lang=es">
-                  <img src="img/twitter.png" alt="twitter" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 copyright">
-            <p>Love & Life</p>
-            <p>Copyright © 2021 THEY, Organitization | All Rights Reserved</p>
-          </div>
-        </div>
-      </footer>
     </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12 titulo-footer">
+          <p>THEY</p>
+        </div>
+        <div class="social">
+          <ul class="row social-list m-auto">
+            <li class="col-4 social-item">
+              <a href="https://es-la.facebook.com/">
+                <img src="img/facebook.png" alt="facebook" />
+              </a>
+            </li>
+            <li class="col-4 social-item">
+              <a href="https://www.instagram.com/?hl=es">
+                <img src="img/instagram.png" alt="instagram" />
+              </a>
+            </li>
+            <li class="col-4 social-item">
+              <a href="https://twitter.com/?lang=es">
+                <img src="img/twitter.png" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 copyright">
+          <p>Love & Life</p>
+          <p>Copyright © 2022 THEY, Organitization | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function navbarToggle() {
+        var menu = document.getElementById("menu");
+        console.log(menu);
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
