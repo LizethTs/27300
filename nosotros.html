@@ -15,31 +15,34 @@
   <body>
     <!--logo-->
    <header>
-    <div class="flex-column flex-sm-column flex-md-row d-flex justify-content-between logo">
-      <p class="nombre-logo">THEY</p>
-      <p class="frase-logo">Love & Life</p>
-    </div>
+      <div class="flex-row flex-sm-row flex-md-row d-flex justify-content-between logo">
+        <img src="img/they-logo.png" class="logo-img ms-4" alt="logo they">
+        <p class="frase-logo me-4 mt-4">Love & Life</p>
+      </div>
     <!--menu de navegación-->
-    <nav class="nav-container">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a href="nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a href="explorar.html">Explorar</a>
-        </li>
-        <li class="nav-item">
-          <a href="noticias.html">Noticias</a>
-        </li>
-        <li class="nav-item">
-          <a href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="nav-container">
+        <div class="nav-icono" onclick="navbarToggle()">
+          <img src="img/menu.png" alt="menu icon">
+        </div>
+        <ul id="menu" class="nav-list">
+          <li class="nav-item">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="explorar.html">Explorar</a>
+          </li>
+          <li class="nav-item">
+            <a href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!--seccion 1-->
     <main class="container-fluid">
       <section class="seccion-nosotros">
@@ -52,70 +55,137 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6  descripcion-nosotros">
             <p>
-              Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Nisi
-              iusto optio aliquam quo quae consequatur, vel aliquid
-              exercitationem fugiat. Natus illo at maxime quisquam placeat et,
-              iusto cupiditate expedita ex!
+             Somos una organización que trabaja hace 2 años en el rescate de los perros de la comunidad.
+             Tenemos como objetivo principal de ayudar a los perros rescatados de la comunidad para encontrar una familia responsable o familias de tránsito donde los animales puedan permanecer por un período de tiempo.
             </p>
             <p>
-              Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Nisi
-              iusto optio aliquam quo quae consequatur, vel aliquid
-              exercitationem fugiat. Natus illo at maxime quisquam placeat et,
-              iusto cupiditate expedita ex!
+              Trabajamos junto a un equipo muy compremitido, solidario y dedicado. Cada uno colabora de forma voluntaria y están dispuestos a dar lo mejor y así hacer el tránsito de los perros lo más agradable posible.  
             </p>
             <p>
-              Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Nisi
-              iusto optio aliquam quo quae consequatur, vel aliquid
-              exercitationem fugiat. Natus illo at maxime quisquam placeat et,
-              iusto cupiditate expedita ex!
+              Contamos con un lugar físico, donde podemos transitar a los perros hasta encontrar una familia. Además, brindamos los cuidados médicos necesarios.
             </p>
             <p>
-              Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Nisi
-              iusto optio aliquam quo quae consequatur, vel aliquid
-              exercitationem fugiat. Natus illo at maxime quisquam placeat et,
-              iusto cupiditate expedita ex!
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Nisi
-              iusto optio aliquam quo quae consequatur, vel aliquid
-              exercitationem fugiat. Natus illo at maxime quisquam placeat et,
-              iusto cupiditate expedita ex!
+              Tratamos de colaborar con la comunidad con castraciones gratuitas durante el año. De esa forma, coordinamos junto a otras organzicaciones con esos eventos, ya que sabemos que muchas familias no cuentan con el acceso financiero para realizar las castraciones en instituciones privadas.
             </p>
           </div>
         </div>
       </section>
-      <!--footer-->
-      <footer class="footer">
-        <div class="row">
-          <div class="col-12 titulo-footer">
-            <p>THEY</p>
-          </div>
-          <div class="social">
-            <ul class="row social-list m-auto">
-              <li class="col-4 social-item">
-                <a href="https://es-la.facebook.com/">
-                  <img src="img/facebook.png" alt="facebook" />
-                </a>
-              </li>
-              <li class="col-4 social-item">
-                <a href="https://www.instagram.com/?hl=es">
-                  <img src="img/instagram.png" alt="instagram" />
-                </a>
-              </li>
-              <li class="col-4 social-item">
-                <a href="https://twitter.com/?lang=es">
-                  <img src="img/twitter.png" alt="twitter" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 copyright">
-            <p>Love & Life</p>
-            <p>Copyright © 2021 THEY, Organitization | All Rights Reserved</p>
-          </div>
+      <section class="seccion-nosotros">
+        <div class="titulo-nosotros">
+          <h2 class="titulo-seccion">Nuestro personal</h2>
         </div>
-      </footer>
+        <div class="row d-flex justify-content-center">
+          <div class="card col-12 col-sm-12 col-md-4 me-5 mt-4" style="width: 18rem;">
+            <img src="img/pic.jpg" class="card-img-top" alt="foto de juan">
+            <div class="card-body">
+              <h5 class="card-title">Juan Fernandez</h5>
+              <p class="card-text">"Es un placer y me siento alegre al estar trabajando con aquellos perros que están en situación de calle"</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Voluntario</li>
+              <li class="list-group-item">Encargado de rescatar</li>
+            </ul>
+          </div> 
+          <div class="card col-12 col-sm-12 col-md-4 me-5 mt-4" style="width: 18rem;">
+            <img src="img/pic1.jpg" class="card-img-top" alt="foto de ana">
+            <div class="card-body">
+              <h5 class="card-title">Ana Rosse</h5>
+              <p class="card-text">"Compartó mis días con los perros y me siento feliz al ver como se trasforman por medio del cuidado y amor"</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Voluntaria</li>
+              <li class="list-group-item">Encargada de los cuidados diarios</li>
+            </ul>
+          </div> 
+          <div class="card col-12 col-sm-12 col-md-4 me-5 mt-4" style="width: 18rem;">
+            <img src="img/pic2.jpg" class="card-img-top" alt="foto de rosario">
+            <div class="card-body">
+              <h5 class="card-title">Rosario Lopez</h5>
+              <p class="card-text">"Hace un 1 año trabajo junto a They, siempre tratamos de hacer que este pequeño paso por They sea lo mejor posible para cada perro rescatado"</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Voluntaria</li>
+              <li class="list-group-item">Encargada de la atención médica</li>
+            </ul>
+          </div> 
+          <div class="card col-12 col-sm-12 col-md-4 me-5 mt-4" style="width: 18rem;">
+            <img src="img/pic4.jpg" class="card-img-top" alt="foto de osvaldo">
+            <div class="card-body">
+              <h5 class="card-title">Osvaldo Teorit</h5>
+              <p class="card-text">"Es una experiencia maravillosa ser parte de está organización y brindar mi tiempo para ayudar"</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Voluntario</li>
+              <li class="list-group-item">Encargado de la atención médica</li>
+            </ul>
+          </div> 
+          <div class="card col-12 col-sm-12 col-md-4 me-5 mt-4" style="width: 18rem;">
+            <img src="img/pic3.jpg" class="card-img-top" alt="foto de esteban">
+            <div class="card-body">
+              <h5 class="card-title">Estebán Torrika</h5>
+              <p class="card-text">"Trabajamos con mucha dedicación para encontrar un familia que realmente este dispuesta a cuidar de los perritos"</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Voluntario</li>
+              <li class="list-group-item">Encargado de los trámites de adopción</li>
+            </ul>
+          </div> 
+          <div class="card col-12 col-sm-12 col-md-4 me-5 mt-4" style="width: 18rem;">
+            <img src="img/pic5.jpg" class="card-img-top" alt="foto de lucia">
+            <div class="card-body">
+              <h5 class="card-title">Lucía Miranda</h5>
+              <p class="card-text">"Cada día tratamos de mejorar la calidad de vida de los perros encontrados"</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Voluntaria</li>
+              <li class="list-group-item">Encargada de rescatar</li>
+            </ul>
+          </div> 
+        </div>
+      </section>
     </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12 titulo-footer">
+          <p>THEY</p>
+        </div>
+        <div class="social">
+          <ul class="row social-list m-auto">
+            <li class="col-4 social-item">
+              <a href="https://es-la.facebook.com/">
+                <img src="img/facebook.png" alt="facebook" />
+              </a>
+            </li>
+            <li class="col-4 social-item">
+              <a href="https://www.instagram.com/?hl=es">
+                <img src="img/instagram.png" alt="instagram" />
+              </a>
+            </li>
+            <li class="col-4 social-item">
+              <a href="https://twitter.com/?lang=es">
+                <img src="img/twitter.png" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 copyright">
+          <p>Love & Life</p>
+          <p>Copyright © 2022 THEY, Organitization | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function navbarToggle() {
+        var menu = document.getElementById("menu");
+        console.log(menu);
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
