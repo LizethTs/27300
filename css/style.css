@@ -16,7 +16,7 @@ ul {
 .font-35, .banner-explorar, .subtituloSeccion-explorar, .subtitulo-noticia {
   font-size: 35px; }
 
-.padding-20, .logo, .nav-item, .button-list, .articulo, .social-list, .seccion-nosotros, .descripcion-nosotros, .seccion-explorar, .integrante, .noticias, .seccion-contacto, .formulario-contacto, .ubicacion, .ubicacion-datos {
+.padding-20, .logo, .nav-item, .button-list, .articulo, .social-list, .seccion-nosotros, .descripcion-nosotros, .seccion-explorar, .integrante, .noticias, .seccion-contacto, .ubicacion, .ubicacion-datos {
   padding: 20px; }
 
 .container-fluid {
@@ -25,6 +25,9 @@ ul {
 .logo {
   background-color: #ffeae5;
   font-size: 25px; }
+
+.logo-img {
+  width: 90px; }
 
 .nav-container {
   background-color: #afbb71; }
@@ -37,7 +40,8 @@ ul {
   @media (max-width: 959px) {
     .nav-list {
       justify-content: none;
-      flex-direction: column; } }
+      flex-direction: column;
+      display: none; } }
 
 .nav-item {
   list-style: none;
@@ -51,7 +55,25 @@ ul {
     transition: 0.5s; }
   @media (max-width: 959px) {
     .nav-item a {
-      font-size: 15px; } }
+      font-size: 15px;
+      width: 100%;
+      display: inline-block; } }
+
+.nav-icono {
+  display: none; }
+  @media (max-width: 959px) {
+    .nav-icono {
+      display: block;
+      text-align: right;
+      cursor: pointer; } }
+
+.nav-icono img {
+  width: 40px; }
+  @media (max-width: 959px) {
+    .nav-icono img {
+      display: inline-block;
+      padding: 5px;
+      padding-top: 5px; } }
 
 .banner {
   padding: 120px;
@@ -97,7 +119,6 @@ ul {
       transition: all 0.3s; }
   @media (max-width: 959px) {
     .button-item {
-      width: 300px;
       margin-bottom: 0px; }
       .button-item a {
         padding: 10px 20px;
@@ -194,7 +215,12 @@ ul {
     color: #ffffff; }
   @media (max-width: 959px) {
     .banner-explorar {
-      font-size: 20px; } }
+      font-size: 25px;
+      padding: 150px; } }
+  @media (max-width: 576px) {
+    .banner-explorar {
+      padding: 25px;
+      font-size: 15px; } }
 
 .seccion-explorar {
   background-color: #f2e6ff;
@@ -302,28 +328,35 @@ ul {
     .titulo-contacto {
       font-size: 35px; } }
 
-.formulario-contacto {
-  background-color: #ffffff;
-  width: 100%;
-  font-size: 25px;
-  color: #55552b;
-  font-style: italic; }
-  @media (max-width: 959px) {
-    .formulario-contacto {
-      width: 75%;
-      margin-top: 25px; } }
+@media (max-width: 959px) {
+  .imagen-contacto {
+    width: 100%; }
+    .imagen-contacto img {
+      width: 100%; } }
+
+@media (max-width: 959px) {
+  .seccion-contacto form {
+    text-align: center; } }
 
 .input-label {
   display: block; }
 
 .input-estilo {
-  width: 100%; }
+  width: 100%;
+  border: 2px solid #e0e0d1; }
   .input-estilo:focus {
     background-color: #ffeae5; }
+  @media (max-width: 959px) {
+    .input-estilo {
+      width: 75%; } }
 
 .formulario-textarea {
   width: 100%;
-  height: 200px; }
+  height: 200px;
+  border: 2px solid #e0e0d1; }
+  @media (max-width: 959px) {
+    .formulario-textarea {
+      width: 75%; } }
 
 .boton-formulario {
   padding: 5px 10px;
